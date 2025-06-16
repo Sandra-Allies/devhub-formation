@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Sandra Alliès, développeur front-end junior spécialisé en HTML, CSS et JavaScript">
+    <meta name="description" content="Portfolio de Sandra Alliès, développeuse front-end junior spécialisé en HTML et CSS/SCSS">
     <meta name="author" content="Sandra Alliès">
     <title>DevHub - Sandra Alliès | Développeur Front-End</title>
     
@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
     <header class="site-header">
         <div class="container">
             <div class="logo">
@@ -29,6 +31,12 @@
                     <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol>
+                    <li><a href="#accueil">Accueil</a></li>
+                </ol>
+            </nav> 
         </div>
     </header>
 
@@ -159,6 +167,14 @@
                         </div>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Travaillons ensemble</h2>
+                <p>Vous avez un projet ? Contactons-nous pour en discuter !</p>
+                <a href="pages/contact.html" class="btn btn-primary">Commencer un projet</a>
             </div>
         </section>
     </main>
