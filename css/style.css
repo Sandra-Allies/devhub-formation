@@ -21,9 +21,15 @@
 	--font-size-md: 1.3rem;
 	--font-size-lg: 1.5rem;
 	--font-size-xl: 1.7rem;
+
+	--font-delius: "Delius", cursive;
 }
 
 /* FIN variable */
+
+h1, h2, h3, h4 {
+	font-family: var(--font-delius);
+}
 
 /* HEADER */
 
@@ -96,7 +102,7 @@ ol li {
 	color: var(--couleur-fond-principal);
 	font-weight: bold;
 	font-size: var(--font-size-md);
-	font-family: "comic sans ms";
+	font-family: var(--font-delius);
 	text-transform: uppercase;
 }
 
@@ -174,12 +180,11 @@ footer {
 }
 
 .highlight {
+	font-family: var(--font-delius);
 	color: var(--couleur-police-rose);
 }
 
 thead td {
-	font-size: var(--font-size-xl);
-	font-weight: bold;
 	padding: 10px;
 	border-left: solid 3px var(--couleur-fond-secondaire);
 	border-bottom: solid 3px var(--couleur-fond-secondaire);
@@ -196,7 +201,7 @@ thead td {
 	color: grey;
 	font-size: var(--font-size-sm);
 	font-weight: bold;
-	font-family: "Segoe UI", sans-serif;
+	font-family: var(--font-oswald);
 	cursor: pointer;
 	overflow: hidden;
 	z-index: 0;
@@ -243,22 +248,6 @@ thead td {
 }
 
 /* FIN DE TEST BOUTON FEERIQUE */
-
-/* .btn {
-	border-radius: 10px;
-	width: auto;
-	height: auto;
-	padding: 10px;
-	margin: 20px;
-	font-size: 1rem;
-	background-image: linear-gradient(
-		to right,
-		#ff9a9e,
-		#fad0c4,
-		#fbc2eb,
-		#a6c1ee
-	);
-} */
 
 .btn:hover {
 	cursor: pointer;
@@ -362,6 +351,14 @@ tfoot td {
 	box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.2),
 		0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
+.item1 h2 {
+	font-size: var(--font-size-xl);
+}
+
+.item1 p {
+	font-size: 1.1rem;
+}
 /* Gestion des emplacements GRID AREA */
 
 .GridContainer {
@@ -385,7 +382,6 @@ tfoot td {
 	width: 100%;
 	height: auto;
 	padding: 10px;
-	/* border-radius: 1rem; */
 	margin-bottom: var(--font-size-ss);
 }
 
@@ -419,4 +415,42 @@ tfoot td {
 .badge5 img {
 	width: 60px;
 	height: auto;
+}
+
+footer {
+	margin: 20px;
+	position: relative;
+	padding: 12px 24px;
+	background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+	border: none;
+	border-radius: 30px;
+	font-size: var(--font-size-sm);
+	font-weight: bold;
+	font-family: var(--font-oswald);
+	overflow: hidden;
+	z-index: 0;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.4),
+		0 0 40px rgba(255, 180, 255, 0.3);
+}
+
+footer::before {
+	content: "";
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: radial-gradient(
+		circle at center,
+		rgba(255, 255, 255, 0.3) 0%,
+		transparent 70%
+	);
+	transform: rotate(0deg) translateX(0);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: -1;
+	animation: sparkle 5s linear infinite;
+	opacity: 1;
 }
