@@ -100,13 +100,15 @@ img {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-delius);
 }
 
 p,
 li {
   font-family: var(--font-ibm);
+  text-align: justify;
 }
 
 body {
@@ -283,8 +285,23 @@ tbody td {
 }
 
 .card-xp {
-  width: 300px;
-  height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+text-align: center;
+}
+
+.card-xp h3 {
+  width: 100%;
+  height: auto;
+  padding: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  background-color: var(--couleur-fond-perle);
+}
+
+.card-back {
+  padding: var(--spacing-sm);
 }
 
 /* ================== */
@@ -340,7 +357,6 @@ tbody td {
   height: 100%;
   backface-visibility: hidden;
   border-radius: var(--spacing-md);
-  padding: var(--spacing-md);
   overflow: auto;
 }
 
