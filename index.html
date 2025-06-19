@@ -4,58 +4,161 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
   <body>
     <nav class="nav-fixed">
       <h1>Menu</h1>
       <ul>
-        <li>Accueil</li>
-        <li>Portfolio</li>
-        <li>A propos</li>
-        <li>Contact</li>
-        <li>Blog</li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer" class="active">Accueil <span><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#dbcbcd"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></span></a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer" class="active">Portfolio <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#dbcbcd"><path d="M270-80q-45 0-77.5-30.5T160-186v-558q0-38 23.5-68t61.5-38l395-78v640l-379 76q-9 2-15 9.5t-6 16.5q0 11 9 18.5t21 7.5h450v-640h80v720H270Zm90-233 200-39v-478l-200 39v478Zm-80 16v-478l-15 3q-11 2-18 9.5t-7 18.5v457q5-2 10.5-3.5T261-293l19-4Zm-40-472v482-482Z"/></svg></span></a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer" class="active">A propos <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#dbcbcd"><path d="M440-560q33 0 56.5-23.5T520-640q0-33-23.5-56.5T440-720q-33 0-56.5 23.5T360-640q0 33 23.5 56.5T440-560Zm0 160q45 0 84.5-19t68.5-54q-35-23-73.5-35T440-520q-41 0-79.5 12T287-473q29 35 68.5 54t84.5 19Zm384 280L636-308q-41 32-90.5 50T440-240q-134 0-227-93t-93-227q0-134 93-227t227-93q134 0 227 93t93 227q0 56-18 105.5T692-364l188 188-56 56ZM440-320q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70Zm0-240Z"/></svg></span></a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer" class="active">Contact <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#dbcbcd"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM360-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm178-280q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560q17 0 28.5 11.5T400-520q0 17-11.5 28.5T360-480Zm120 0Z"/></svg></span></a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer" class="active">Blog <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#dbcbcd"><path d="M160-120q-33 0-56.5-23.5T80-200v-560q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v560q0 33-23.5 56.5T800-120H160Zm0-80h640v-560H160v560Zm80-80h480v-80H240v80Zm0-160h160v-240H240v240Zm240 0h240v-80H480v80Zm0-160h240v-80H480v80ZM160-200v-560 560Z"/></svg></span></a></li>
       </ul>
     </nav>
 
     <div class="grid-container-body">
       <header>
-        <div class="banniere">Bannière</div>
-        <div class="photo-profil">Photo profil</div>
+        <figure class="banniere">
+          <img
+            src="/assets/images/ban.png"
+            alt="Bannière représentant l'univers de Sandra"
+          />
+        </figure>
+        <figure class="photo-profil">
+          <img src="/assets/images/photo.png" alt="Photo de profil de Sandra" />
+        </figure>
       </header>
 
       <main>
         <div class="flex-container-main">
-          <div class="description">Description</div>
-          <div class="card-about">About</div>
+          <section class="description">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <h2>
+                      Technicienne d’assistance & conceptrice développeuse
+                      d’applications
+                    </h2>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      Je suis la gardienne des coulisses numériques, celle qui
+                      veille à la fluidité et à la performance des systèmes
+                      informatiques. Avec patience et expertise, je résous les
+                      énigmes techniques qui freinent le quotidien des
+                      utilisateurs, apportant clarté et sérénité dans un univers
+                      souvent complexe.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      Mais mon talent ne s’arrête pas là : je donne vie à des
+                      idées en concevant et développant des applications
+                      sur-mesure, façonnant des outils intuitifs et innovants
+                      qui rapprochent les utilisateurs de leurs objectifs. À la
+                      croisée de la technique et de la créativité, je bâtis des
+                      ponts entre les besoins humains et les possibilités
+                      infinies du numérique.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="card-about">
+            <h2>✦ À propos de moi ✦</h2>
+            <p>
+              On raconte qu’au détour d’un clavier, entre deux lignes de code et
+              quelques poussières de pixels, vit une curieuse artisan·e du
+              numérique. Ni tout à fait mage, ni tout à fait machine, je suis
+              une rêveuse rigoureuse, animée par une soif tranquille d’apprendre
+              et une volonté farouche de bien faire. Mon savoir-être, c’est
+              celui d’une alliée : à l’écoute, patiente, adaptable. Quand le bug
+              rôde ou que la panique frappe, je ne fuis pas — je respire,
+              j’analyse, je répare. 
+              <p>Toujours avec soin, jamais dans la
+              précipitation. Je crois que la douceur peut cohabiter avec la
+              maîtrise, que la rigueur peut être chaleureuse. Férue d’univers
+              insolites et de mondes parallèles, j’aime explorer les interstices
+              entre le réel et l’imaginaire : le silence d’un abreuvoir au
+              crépuscule, la chorégraphie d’un hanneton maladroit, la logique
+              secrète d’un système en panne.</p>
+              <p>Mes passions se nichent dans les
+              détails : le dessin, la nature, les récits étranges, les
+              mécaniques de jeu, les histoires codées dans les plis du
+              quotidien. Créer, dépanner, observer, structurer, inventer… chaque
+              geste est une incantation. Et si je devais résumer mon approche :</p>
+            </p>
+            <p>
+                je tisse du sens là où d’autres ne voient que du fil.
+            </p>
+          </section>
 
-          <div class="grid-group">
-            <div class="card-xp cda">CDA</div>
-            <div class="card-xp card-portfolio">Portfolio</div>
-            <div class="card-xp tai">TAI</div>
+          <section class="grid-group">
+            <article class="card-xp cda">
+              <h3>CDA</h3>
+            </article>
+            <article class="card-xp card-portfolio">
+              <h3>Portfolio</h3>
+            </article>
+            <article class="card-xp tai">
+              <h3>TAI</h3>
+            </article>
 
-            <div class="card-xp dev">DEV</div>
-            <div class="card-xp divers">DIVERS</div>
-            <div class="card-xp web">WEB</div>
-          </div>
+            <article class="card-xp dev">
+              <h3>DEV</h3>
+            </article>
+            <article class="card-xp divers">
+              <h3>DIVERS</h3>
+            </article>
+            <article class="card-xp web">
+              <h3>WEB</h3>
+            </article>
+          </section>
 
-          <div class="card-id-skills">
-            card-id-skills
-            <div class="card-skill card-html">card-skill card-html</div>
-            <div class="card-skill card-css">card-skill card-css</div>
-          </div>
+          <section class="card-id-skills">
+            <h2>Compétences</h2>
+            <article class="card-skill card-html">card-skill card-html</article>
+            <article class="card-skill card-css">card-skill card-css</article>
+          </section>
 
-          <div class="work">work</div>
+          <section class="work"><h3>Travaillons ensemble</h3></section>
         </div>
       </main>
 
       <footer>
         <div class="grid-container-footer">
-          <div class="footer-devhub">footer-devhub</div>
-          <div class="footer-contact">footer-contact</div>
-          <div class="footer-copyright">footer-copyright</div>
+          <section class="footer-devhub">footer-devhub</section>
+          <section class="footer-contact">footer-contact</section>
+          <small class="footer-copyright">footer-copyright</small>
         </div>
       </footer>
     </div>
+    <script src="/js/main.js"></script>
   </body>
 </html>

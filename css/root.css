@@ -3,16 +3,14 @@
 /* COULEUR DE FOND  */
 --couleur-fond-principal: #f6e8dd;
 --couleur-fond-secondaire: #b78a69;
---couleur-fond-nav: #c57297;
 --couleur-fond-perle: #dbcbcd;
+--couleur-fond-perle-transparente: rgba(219, 203, 205, 0.2);
 --couleur-fond-vert: #c3be71;
 --couleur-fond-rose: #cb6191;
 
 /* COULEUR BORDURE */
-
 --couleur-bordure-principal: #f6e8dd;
 --couleur-bordure-secondaire: #b78a69;
---couleur-bordure-nav: #c57297;
 --couleur-bordure-perle: #dbcbcd;
 --couleur-bordure-vert: #c3be71;
 --couleur-bordure-rose: #cb6191;
@@ -32,11 +30,11 @@
 
 /* POLICES */
 --font-delius: "Delius", cursive;
+--font-ibm: "IBM Plex Mono", monospace;
 
 /* COULEUR DE POLICES */
 --couleur-police-principal: #f6e8dd;
 --couleur-police-secondaire: #b78a69;
---couleur-police-nav: #c57297;
 --couleur-police-vert: #c3be71;
 --couleur-police-perle: #dbcbcd;
 --couleur-police-rose: #cb6191;
@@ -53,5 +51,6 @@
 --spacing-sm: 0.5rem;
 --spacing-md: 1rem;
 --spacing-lg: 2rem;
+--spacing-xl: 2.5rem;
 
 }
