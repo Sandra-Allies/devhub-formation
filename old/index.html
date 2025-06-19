@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Portfolio de Sandra Alliès, développeuse front-end junior spécialisé en HTML et CSS/SCSS"
+		/>
+		<meta name="author" content="Sandra Alliès" />
+		<title>
+			DevHub - Sandra Alliès | Conceptrice Développeuse d'application spécialisé
+			Front-End
+		</title>
+
+		<!-- Favicon (optionnel) -->
+		<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<a href="#hero" class="skip-link">Aller au contenu principal</a>
+
+			<header>
+				<div class="container">
+					<div class="logo">
+						<img
+							class="ban"
+							src="/assets/images/ban.png"
+							alt="Banière du site DevHub"
+						/>
+						<a href="#accueil">
+							<img
+								class="photoprofil"
+								src="/assets/images/photo.png"
+								alt="Photo de profil reviens sur l'accueil au clic"
+							/>
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<!-- Bouton menu hamburger -->
+			<button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+		</button>
+					<!-- Overlay pour fermer le menu sur mobile -->
+					<div class="menu-overlay"></div>
+					
+			<nav class="breadcrumb" aria-label="Fil d'Ariane">
+				<ol>
+					<a href="#accueil"><li>Accueil</li></a>
+					<a href="#accueil"><li>Accueil 2</li></a>
+					<a href="#accueil"><li>Accueil 3</li></a>
+					<a href="#accueil"><li>Accueil 4</li></a>
+				</ol>
+			</nav>
+
+			<main class="main-content">
+				<section id="hero" class="hero-section">
+					<div class="tcontainer">
+						<table class="thero">
+							<thead class="thead">
+								<tr>
+									<td>
+										<h1>
+											Bonjour, je suis
+											<span class="highlight">Sandra Alliès</span>
+										</h1>
+									</td>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>
+										<p class="hero-subtitle">
+											Conceptrice Développeuse d’Application – Front-End
+											Enchanteuse Junior
+										</p>
+										<p class="hero-description">
+											Tisseuse de pixels et dompteuse de balises, je donne vie à
+											des interfaces modernes, accessibles et élégantes.
+											Spécialisée en HTML5 et CSS3, j’invoque chaque ligne de
+											code comme un sortilège au service de l’expérience
+											utilisateur.
+										</p>
+									</td>
+								</tr>
+							</tbody>
+
+							<tfoot>
+								<tr>
+									<td>
+										<button class="bouton-feerique">Voir mes projets</button>
+										<button class="bouton-feerique">Me contacter</button>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
+
+				<!-- DEBUT DU CSS GRID -->
+
+				<section id="about">
+					<div class="GridContainer">
+						<div class="item1 about">
+							<h2>À propos de moi</h2>
+							<p>
+								Il était une fois, dans un coin tranquille du monde numérique,
+								une âme curieuse qui se posait une grande question : « Mais…
+								comment sont faits les sites internet ? » Cette question,
+								anodine en apparence, fut le début d’une aventure qui dure
+								depuis plus de vingt ans. Guidée par la soif de comprendre, elle
+								tomba un jour sur un grimoire moderne nommé le Site du Zéro, et
+								rencontra sa mascotte espiègle, Zozor. À ses côtés, elle apprit
+								les premiers sortilèges du HTML, les enchantements du CSS et les
+								mystères du PHP. Des jours, des nuits, et des litres de café
+								plus tard, elle devint une véritable tisseuse de toile. ✧ Fan
+								inconditionnelle de CSS et de SCSS, elle compose aujourd’hui des
+								interfaces élégantes où l’utilisateur est roi, et où chaque
+								pixel a sa place. Son grimoire préféré ? Celui de
+								l’organisation. Car dans chaque projet, elle trace ses chemins
+								comme on trace une carte au trésor : avec rigueur, clarté et
+								passion. L’histoire continue… et peut-être êtes-vous, vous
+								aussi, sur le point d’en faire partie.
+							</p>
+						</div>
+
+						<div class="item2 CDA">
+							<h3>2025</h3>
+							<h2>Conceptrice développeuse d'application</h2>
+							<div class="badge0 badge2">
+								<a
+									href="https://territoiredigital.afpa.fr/fr"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src="/assets/images/afpa.png"
+										alt="Logo de l'afpa territoire digital"
+									/>
+								</a>
+
+								<a
+									href="https://www.ch-jonzac.fr/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src="/assets/images/chj.png"
+										alt="Logo du centre hospitalier de jonzac"
+									/>
+								</a>
+							</div>
+						</div>
+
+						<div class="item3 TAI">
+							<h3>2025 - 2024</h3>
+							<h2>Technicienne d'assistance informatique</h2>
+							<div class="badge0 badge3">
+								<a
+									href="https://www.afpa.fr/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img src="/assets/images/afpa.png" alt="Logo de l'afpa" />
+								</a>
+
+								<a
+									href="https://www.ch-jonzac.fr/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src="/assets/images/chj.png"
+										alt="Logo du centre hospitalier de jonzac"
+									/>
+								</a>
+							</div>
+						</div>
+
+						<div class="item4 DWWM">
+							<h3>2023</h3>
+							<h2>Developpeuse web et web mobile</h2>
+							<div class="badge0 badge4">
+								<a
+									href="https://oclock.io/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src="/assets/images/oclock.png"
+										alt="Logo de l'école O'clock"
+									/>
+								</a>
+							</div>
+						</div>
+
+						<div class="item5 divers">
+							<h3>2022 - 2010</h3>
+							<h2>Expériences diverses</h2>
+							<div class="badge0 badge5">
+								<img
+									src="/assets/images/ambulance.png"
+									alt="Icon d'une ambulance"
+								/>
+
+								<img
+									src="/assets/images/caisse.png"
+									alt="Icon d'une caisse enregistreuse"
+								/>
+
+								<img
+									src="/assets/images/cuisine.png"
+									alt="Icon d'un cuisinier"
+								/>
+							</div>
+						</div>
+
+						<div class="item6 webmaster">
+							<h3>2008</h3>
+							<h2>Webmaster autodidacte</h2>
+							<div class="badge0 badge6">
+								<a
+									href="https://openclassrooms.com/fr/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src="/assets/images/zozor.png"
+										alt="Logo de l'école OpenClassRoom"
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="item7 badge portfolio">
+							<a href="/pages/portfolio.html" target="_blank" rel="noopener noreferrer"><h1>Voir mon Protfolio</h1></a>
+						</div>
+					</div>
+				</section>
+
+				<!-- FIN DU CSS GRID -->
+
+				<section id="services" class="services-section">
+					<div class="container">
+						<div class="containerCompetences">
+							<h2 class="section-title">Mes compétences</h2>
+							<p class="section-description">
+								Technologies et outils que je maîtrise pour créer des
+								expériences web modernes.
+							</p>
+						</div>
+						<div class="skills-grid">
+							<article class="skill-card">
+								<div class="skill-icon">
+									<span role="img" aria-label="HTML5">🌐</span>
+								</div>
+								<h3 class="skill-title">HTML5</h3>
+								<p class="skill-description">
+									Structure sémantique, accessibilité, optimisation SEO.
+									Maîtrise des nouvelles balises et APIs.
+								</p>
+								<div class="skill-level">
+									<span class="skill-label">Niveau :</span>
+									<span class="skill-value">Intermédiaire</span>
+								</div>
+							</article>
+
+							<article class="skill-card">
+								<div class="skill-icon">
+									<span role="img" aria-label="CSS3">🎨</span>
+								</div>
+								<h3 class="skill-title">CSS3</h3>
+								<p class="skill-description">
+									Design responsive, Flexbox. Utilisation de SCSS et de ses
+									variable pour une meilleur gestion et organisation du code.
+								</p>
+								<div class="skill-level">
+									<span class="skill-label">Niveau :</span>
+									<span class="skill-value">Intermédiaire</span>
+								</div>
+							</article>
+
+							<article class="skill-card">
+								<div class="skill-icon">
+									<span role="img" aria-label="JavaScript">⚡</span>
+								</div>
+								<h3 class="skill-title">JavaScript ES6+</h3>
+								<p class="skill-description">
+									Interactivité, manipulation DOM, APIs modernes. Approche
+									orientée composants et bonnes pratiques.
+								</p>
+								<div class="skill-level">
+									<span class="skill-label">Niveau :</span>
+									<span class="skill-value">Débutant</span>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="cta-section">
+					<div class="container">
+						<h2>Travaillons ensemble</h2>
+						<p>Vous avez un projet ? Contactons-nous pour en discuter !</p>
+						<a href="pages/contact.html" class="btn btn-primary"
+							>Commencer un projet</a
+						>
+					</div>
+				</section>
+			</main>
+
+			<footer class="site-footer">
+				<div class="container">
+					<div class="footer-content">
+						<div class="footer-info">
+							<h3>DevHub - Sandra Alliès</h3>
+							<p>Développeuse Front-End Junior basé en France</p>
+						</div>
+
+						<div class="footer-contact">
+							<h4>Contact</h4>
+							<address>
+								<p>
+									Email :
+									<a href="mailto:sandra.allies.fr@gmail.com"
+										>sandra.allies.fr@gmail.com</a
+									>
+								</p>
+								<p>
+									LinkedIn :
+									<a
+										href="https://www.linkedin.com/in/sandra-allies/"
+										target="_blank"
+										rel="noopener noreferrer"
+										>Mon Profil</a
+									>
+								</p>
+								<p>
+									GitHub :
+									<a
+										href="https://github.com/Sandra-Allies/devhub-formation"
+										target="_blank"
+										rel="noopener noreferrer"
+										>Mon Repository</a
+									>
+								</p>
+							</address>
+						</div>
+
+						<div class="footer-legal">
+							<p>&copy; 2025 Sandra Alliès. Tous droits réservés.</p>
+							<p>Réalisé dans le cadre de la formation DevHub</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
