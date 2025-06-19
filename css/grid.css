@@ -1,0 +1,37 @@
+/* ====================*/
+/* GRID CONTAINER BODY */
+/* ====================*/
+
+.grid-container-body {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: var(--spacing-lg);
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+header { grid-area: header;}
+main { grid-area:  main;}
+footer { grid-area: footer;}
+
+/* =================== */
+/* GRID CONTAINER MAIN */
+/* =================== */
+
+.grid-container-main {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: var(--spacing-md);
+justify-content: center;
+}
+
+.description,
+.card-about,
+.card-id-skills,
+.work {
+    grid-column: 1 / -1;
+    border: 1px solid red;
+}
+

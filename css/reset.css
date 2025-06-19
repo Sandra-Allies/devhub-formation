@@ -1,0 +1,33 @@
+/* RESET DE BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* RESET BODY ET HTML */
+  html, body {
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  /* LISTES SANS PUCE NI INDENTATION */
+  ul, ol {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  /* LIENS SANS SOULIGNEMENT PAR DÉFAUT */
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* IMAGES RÉACTIVES */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  

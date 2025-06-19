@@ -1,0 +1,57 @@
+:root {
+
+/* COULEUR DE FOND  */
+--couleur-fond-principal: #f6e8dd;
+--couleur-fond-secondaire: #b78a69;
+--couleur-fond-nav: #c57297;
+--couleur-fond-perle: #dbcbcd;
+--couleur-fond-vert: #c3be71;
+--couleur-fond-rose: #cb6191;
+
+/* COULEUR BORDURE */
+
+--couleur-bordure-principal: #f6e8dd;
+--couleur-bordure-secondaire: #b78a69;
+--couleur-bordure-nav: #c57297;
+--couleur-bordure-perle: #dbcbcd;
+--couleur-bordure-vert: #c3be71;
+--couleur-bordure-rose: #cb6191;
+
+/* TAILLE BORDURE */
+--border-sm: 2px;
+--border-md: 3px;
+--border-lg: 4px;
+--border-xl: 6px;
+
+/* RADIUS BORDURE */
+--border-radius-sm: 0.5rem;
+--border-radius-lg: 1rem;
+
+/* SHADOW BORDURE */
+--shadow-lg: 0 0 10px rgba(0, 0, 0, 0.5);
+
+/* POLICES */
+--font-delius: "Delius", cursive;
+
+/* COULEUR DE POLICES */
+--couleur-police-principal: #f6e8dd;
+--couleur-police-secondaire: #b78a69;
+--couleur-police-nav: #c57297;
+--couleur-police-vert: #c3be71;
+--couleur-police-perle: #dbcbcd;
+--couleur-police-rose: #cb6191;
+
+
+/* TAILLES POLICES */
+--font-size-ss: 0.5rem;
+--font-size-sm: 1rem;
+--font-size-md: 1.3rem;
+--font-size-lg: 1.5rem;
+--font-size-xl: 1.7rem;
+
+/* ESPACEMENT */
+--spacing-sm: 0.5rem;
+--spacing-md: 1rem;
+--spacing-lg: 2rem;
+
+}

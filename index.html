@@ -1,250 +1,61 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio de [Votre Nom], développeur front-end junior spécialisé en HTML, CSS et JavaScript"
-    />
-    <meta name="author" content="Sandra Alliès" />
-	<!-- Open Graph pour réseaux sociaux -->
-<meta property="og:title" content="DevHub - [Votre Nom] | Développeur Front-End">
-<meta property="og:description" content="Portfolio de [Votre Nom], développeur front-end junior spécialisé en HTML, CSS et JavaScript">
-<meta property="og:image" content="assets/images/og-image.jpg">
-<meta property="og:url" content="https://votre-username.github.io/devhub-formation">
-
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DevHub - Sandra Alliès">
-<meta name="twitter:description" content="Développeur Front-End Junior - Portfolio">
-    <title>DevHub - Sandra Alliès | Développeur Front-End</title>
-
-    <!-- Favicon (optionnel) -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-    <header class="site-header">
-      <div class="container">
-        <div class="logo">
-          <h1><a href="#accueil">DevHub</a></h1>
-        </div>
+    <nav class="nav-fixed">
+      <h1>Menu</h1>
+      <ul>
+        <li>Accueil</li>
+        <li>Portfolio</li>
+        <li>A propos</li>
+        <li>Contact</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
 
-        <!-- Bouton menu hamburger -->
-        <button
-          class="menu-toggle"
-          aria-label="Ouvrir le menu de navigation"
-          aria-expanded="false"
-        >
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
+    <div class="grid-container-body">
+      <header>
+        <div class="banniere">Bannière</div>
+        <div class="photo-profil">Photo profil</div>
+      </header>
 
-        <!-- Overlay pour fermer le menu sur mobile -->
-        <div class="menu-overlay"></div>
+      <main>
+        <div class="flex-container-main">
+          <div class="description">Description</div>
+          <div class="card-about">About</div>
 
-        <nav class="breadcrumb" aria-label="Fil d'Ariane">
-          <ol>
-            <li><a href="#accueil">Accueil</a></li>
-          </ol>
-        </nav>
-        <nav class="main-navigation">
-          <ul class="nav-menu">
-            <li><a href="#accueil" class="nav-link active">Accueil</a></li>
-            <li>
-              <a href="pages/portfolio.html" class="nav-link">Portfolio</a>
-            </li>
-            <li><a href="#about" class="nav-link">À propos</a></li>
-            <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
-            <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- Contenu à développer -->
+          <div class="grid-group">
+            <div class="card-xp cda">CDA</div>
+            <div class="card-xp card-portfolio">Portfolio</div>
+            <div class="card-xp tai">TAI</div>
 
-    <main class="main-content">
-      <section id="hero" class="hero-section">
-        <div class="container">
-          <div class="hero-content">
-            <h2 class="hero-title">
-              Bonjour, je suis <span class="highlight">Sandra Alliès</span>
-            </h2>
-            <p class="hero-subtitle">Développeur Front-End Junior</p>
-            <p class="hero-description">
-              Passionné par la création d'expériences web modernes et
-              accessibles. Spécialisé en HTML5, CSS3 et JavaScript ES6+.
-            </p>
-            <div class="hero-actions">
-              <a href="pages/portfolio.html" class="btn btn-primary"
-                >Voir mes projets</a
-              >
-              <a href="pages/contact.html" class="btn btn-secondary"
-                >Me contacter</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about-section">
-        <div class="container">
-          <h2 class="section-title">À propos de moi</h2>
-
-          <div class="about-content">
-            <div class="about-text">
-              <p>
-                Diplômé en développement web, je me spécialise dans la création
-                d'interfaces utilisateur modernes et responsive. Ma passion pour
-                les technologies front-end me pousse à apprendre continuellement
-                et à suivre les meilleures pratiques du secteur.
-              </p>
-              <p>
-                Mon approche combine créativité et rigueur technique pour livrer
-                des expériences web optimales, accessibles à tous les
-                utilisateurs.
-              </p>
-
-              <h3>Mon parcours</h3>
-              <ul class="timeline">
-                <li><strong>2025</strong> - Formation DevHub (70h)</li>
-                <li><strong>2024</strong> - Autoformation HTML/CSS</li>
-                <li><strong>2023</strong> - Découverte du développement web</li>
-              </ul>
-            </div>
-
-            <div class="about-image">
-              <figure>
-                <img
-                  src="assets/images/photo.png"
-                  alt="Photo de profil de Sandra Alliès"
-                  class="profile-photo"
-                />
-                <figcaption>Développeur Front-End passionné</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="services-section">
-        <div class="container">
-          <h2 class="section-title">Mes compétences</h2>
-          <p class="section-description">
-            Technologies et outils que je maîtrise pour créer des expériences
-            web modernes.
-          </p>
-
-          <div class="skills-grid">
-            <article class="skill-card">
-              <div class="skill-icon">
-                <span role="img" aria-label="HTML5">🌐</span>
-              </div>
-              <h3 class="skill-title">HTML5</h3>
-              <p class="skill-description">
-                Structure sémantique, accessibilité, optimisation SEO. Maîtrise
-                des nouvelles balises et APIs.
-              </p>
-              <div class="skill-level">
-                <span class="skill-label">Niveau :</span>
-                <span class="skill-value">Intermédiaire</span>
-              </div>
-            </article>
-
-            <article class="skill-card">
-              <div class="skill-icon">
-                <span role="img" aria-label="CSS3">🎨</span>
-              </div>
-              <h3 class="skill-title">CSS3</h3>
-              <p class="skill-description">
-                Design responsive, Flexbox, Grid, animations. Méthodologies
-                modernes et performances optimisées.
-              </p>
-              <div class="skill-level">
-                <span class="skill-label">Niveau :</span>
-                <span class="skill-value">Intermédiaire</span>
-              </div>
-            </article>
-
-            <article class="skill-card">
-              <div class="skill-icon">
-                <span role="img" aria-label="JavaScript">⚡</span>
-              </div>
-              <h3 class="skill-title">JavaScript ES6+</h3>
-              <p class="skill-description">
-                Interactivité, manipulation DOM, APIs modernes. Approche
-                orientée composants et bonnes pratiques.
-              </p>
-              <div class="skill-level">
-                <span class="skill-label">Niveau :</span>
-                <span class="skill-value">Débutant</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="cta-section">
-        <div class="container">
-          <h2>Travaillons ensemble</h2>
-          <p>Vous avez un projet ? Contactons-nous pour en discuter !</p>
-          <a href="pages/contact.html" class="btn btn-primary"
-            >Commencer un projet</a
-          >
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-info">
-            <h3>DevHub - [Votre Nom]</h3>
-            <p>Développeur Front-End Junior basé en France</p>
+            <div class="card-xp dev">DEV</div>
+            <div class="card-xp divers">DIVERS</div>
+            <div class="card-xp web">WEB</div>
           </div>
 
-          <div class="footer-contact">
-            <h4>Contact</h4>
-            <address>
-              <p>
-                Email :
-                <a href="mailto:votre.email@example.com"
-                  >votre.email@example.com</a
-                >
-              </p>
-              <p>
-                LinkedIn :
-                <a href="#" target="_blank" rel="noopener noreferrer"
-                  >Votre Profil</a
-                >
-              </p>
-              <p>
-                GitHub :
-                <a href="#" target="_blank" rel="noopener noreferrer"
-                  >Votre Repository</a
-                >
-              </p>
-            </address>
+          <div class="card-id-skills">
+            card-id-skills
+            <div class="card-skill card-html">card-skill card-html</div>
+            <div class="card-skill card-css">card-skill card-css</div>
           </div>
 
-          <div class="footer-legal">
-            <p>&copy; 2025 [Votre Nom]. Tous droits réservés.</p>
-            <p>Réalisé dans le cadre de la formation DevHub</p>
-          </div>
+          <div class="work">work</div>
         </div>
-      </div>
-    </footer>
-	<!-- Scripts -->
-<script src="js/main.js"></script>
+      </main>
+
+      <footer>
+        <div class="grid-container-footer">
+          <div class="footer-devhub">footer-devhub</div>
+          <div class="footer-contact">footer-contact</div>
+          <div class="footer-copyright">footer-copyright</div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
