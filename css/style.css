@@ -39,7 +39,6 @@ img {
 /* ============= */
 /* ROOT VARIABLE */
 /* ============= */
-
 :root {
   /* COULEUR DE FOND  */
   --couleur-fond-principal: #f6e8dd;
@@ -68,6 +67,7 @@ img {
 
   /* SHADOW BORDURE */
   --shadow-lg: 0 0 10px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 0 5px rgba(0, 0, 0, 0.1);
 
   /* POLICES */
   --font-delius: "Delius", cursive;
@@ -93,7 +93,6 @@ img {
   --spacing-lg: 2rem;
   --spacing-xl: 2.5rem;
 }
-
 /* ================== */
 /* DEBUT FLEXBOX BODY */
 /* ================== */
@@ -285,10 +284,10 @@ tbody td {
 }
 
 .card-xp {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
 }
 
 .card-xp h3 {
@@ -351,7 +350,8 @@ text-align: center;
   border-radius: var(--spacing-md);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -363,4 +363,119 @@ text-align: center;
 .card-back {
   background-color: whitesmoke;
   transform: rotateY(180deg);
+}
+
+/* ============== */
+/* CARD ID SKILLS */
+/* ============== */
+
+.card-id-skills {
+  background-color: whitesmoke;
+  width: auto;
+  height: auto;
+  padding: var(--spacing-lg);
+}
+
+.card-id-skills h2 {
+  width: auto;
+  height: auto;
+  padding: var(--spacing-md);
+  border-left: var(--couleur-bordure-secondaire) 2px solid;
+  border-bottom: var(--couleur-bordure-secondaire) 2px solid;
+}
+
+.wrapper-card-id {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  border-right: var(--couleur-bordure-secondaire) 2px solid;
+  border-bottom: var(--couleur-bordure-secondaire) 2px solid;
+}
+
+/* MEDIA Q CARD ID SKILLS */
+
+@media (max-width: 1400px) {
+  .wrapper-card-id {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper-card-id {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper-card-id {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 870px) {
+  .wrapper-card-id {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper-card-id {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper-card-id {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-id {
+  min-width: 32.5%;
+  height: 200px;
+  background-color: white;
+  border: white solid 2px;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.haut {
+  padding: var(--spacing-md);
+  width: auto;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.card-id-tag {
+  width: 50%;
+  height: auto;
+  padding: var(--spacing-sm);
+  align-self: center;
+  text-align: center;
+  background-color: var(--couleur-fond-vert);
+  border-radius: var(--border-radius-lg);
+}
+
+.bas h3 {
+  width: 50%;
+  height: auto;
+  padding: var(--spacing-sm);
+  align-self: center;
+  border-right: var(--couleur-bordure-rose) 2px solid;
+}
+
+.bas {
+  padding: var(--spacing-md);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
 }

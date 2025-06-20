@@ -27,6 +27,7 @@
 
 /* SHADOW BORDURE */
 --shadow-lg: 0 0 10px rgba(0, 0, 0, 0.5);
+--shadow-sm:  0 0 5px rgba(0, 0, 0, 0.1);
 
 /* POLICES */
 --font-delius: "Delius", cursive;
