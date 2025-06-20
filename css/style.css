@@ -316,12 +316,30 @@ tbody td {
 }
 
 .grid-group {
-  width: 90%;
+  width: 93%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 350px);
   justify-content: center;
   gap: var(--spacing-md);
+}
+
+/* ================== */
+/* MEDIA Q GRID GROUP */
+/* ================== */
+
+@media (max-width: 1290px) {
+  .grid-group {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 870px) {
+  .grid-group {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ==================== */
@@ -563,4 +581,14 @@ small {
   grid-column: 1 / -1;
   margin-top: var(--spacing-lg);
   justify-self: center;
+}
+
+/* ============== */
+/* MEDIA Q FOOTER */
+/* ============== */
+
+@media (max-width: 870px) {
+  .grid-container-footer {
+    grid-template-columns: 1fr;
+  }
 }
