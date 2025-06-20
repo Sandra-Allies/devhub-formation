@@ -134,7 +134,7 @@ body {
   flex: 1;
   background-color: var(--couleur-fond-principal);
   margin-left: 210px;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 0 20px;
 }
 
 /* ======= */
@@ -249,8 +249,7 @@ footer {
   text-align: justify;
 }
 
-.description thead,
-p {
+.description thead, .description p {
   padding: 10px;
 }
 
@@ -544,4 +543,24 @@ tbody td {
 	100% {
 		transform: rotate(360deg) translateX(10%);
 	}
+}
+
+/* ============== */
+/* SECTION FOOTER */
+/* ============== */
+
+.grid-container-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  width: 100%;
+  height: auto;
+  padding: var(--spacing-lg);
+  background-color: whitesmoke;
+}
+
+small {
+  grid-column: 1 / -1;
+  margin-top: var(--spacing-lg);
+  justify-self: center;
 }
