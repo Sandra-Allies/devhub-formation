@@ -109,7 +109,6 @@ li,
 a {
   font-family: var(--font-ibm);
   text-align: justify;
-  padding: var(--spacing-md);
 }
 
 body {
@@ -284,11 +283,26 @@ tbody td {
     0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+.card-about h2 {
+  padding-bottom: var(--spacing-lg);
+}
+
+.card-about > p:first-of-type {
+  text-indent: var(--spacing-lg);
+}
+.card-about p {
+  padding: var(--spacing-sm);
+}
+
 .card-xp {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+}
+
+.card-back p {
+  padding: var(--spacing-md);
 }
 
 .card-xp h3 {
@@ -469,6 +483,11 @@ tbody td {
   flex-direction: row;
   justify-content: space-between;
   gap: var(--spacing-sm);
+}
+
+.haut img {
+  width: 90px;
+  height: 90px;
 }
 
 .card-id-tag {
